@@ -1,5 +1,6 @@
 (function(){
   window.cabinette.App = function(){
-    console.log('app exists!');
+    this.renderer = new cabinette.Renderer();
+    this.reader = new cabinette.Reader();
   };
 }());
