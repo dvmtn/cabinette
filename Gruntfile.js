@@ -8,8 +8,19 @@
         separator: ';'
       },
       dist: {
-        src: ['js/lib/*.js','js/src/*.js'],
+        src: [
+          'js/bookends/pre.js',
+          'js/lib/*.js',
+          'js/src/*.js', 
+          'js/bookends/post.js'
+        ],
         dest: 'js/build/<%= pkg.name %>.min.js'
+      }
+    },
+    jasmine: {
+      src: 'js/build/cabinette.min.js',
+      options:{
+        specs: 'specs/*'
       }
     },
     // uglify: {
@@ -49,6 +60,7 @@
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-jasmine');
 
   // Default task(s).
   grunt.registerTask('default', [
@@ -56,6 +68,10 @@
     'concat',
     'sass'
     //, 'uglify'
+  ]);
+
+  grunt.registerTask('test', [
+    'jasmine'
   ]);
 
 };
