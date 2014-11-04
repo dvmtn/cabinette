@@ -2,7 +2,7 @@
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),    
+    pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
         separator: ';'
@@ -11,7 +11,7 @@
         src: [
           'js/bookends/pre.js',
           'js/lib/*.js',
-          'js/src/*.js', 
+          'js/src/*.js',
           'js/bookends/post.js'
         ],
         dest: 'js/build/<%= pkg.name %>.min.js'
@@ -62,11 +62,11 @@
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-  // Default task(s).
-  grunt.registerTask('default', [
+  grunt.registerTask('watch', [
     'watch',
     'concat',
-    'sass'
+    'sass',
+    'jasmine'
     //, 'uglify'
   ]);
 
@@ -74,4 +74,9 @@
     'jasmine'
   ]);
 
+  grunt.registerTask('default', [
+    'concat',
+    'sass',
+    'jasmine'
+  ]);
 };
