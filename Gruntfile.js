@@ -62,21 +62,21 @@
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
 
-  grunt.registerTask('watch', [
+  grunt.registerTask('default', [
+    'concat',
+    'sass',
+    'jasmine'
+  ]);
+
+  grunt.registerTask('guard', [
     'watch',
     'concat',
     'sass',
     'jasmine'
-    //, 'uglify'
   ]);
 
   grunt.registerTask('test', [
     'jasmine'
   ]);
 
-  grunt.registerTask('default', [
-    'concat',
-    'sass',
-    'jasmine'
-  ]);
 };
