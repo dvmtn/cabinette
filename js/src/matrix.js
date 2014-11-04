@@ -1,3 +1,5 @@
+var input_csv = 'investment.csv';
+
 var m = [30, 10, 10, 10],
     w = 960 - m[1] - m[3],
     h = 500 - m[0] - m[2];
@@ -17,30 +19,35 @@ var svg = d3.select("#diagram").append("svg")
   .append("g")
   .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.csv("investment.csv", function(error, investment) {
+d3.csv(input_csv, function(error, investment) {
 
     // Extract the list of dimensions and create a scale for each.
-    x.domain(dimensions = d3.keys(investment[0]).filter(function(d) {
-        return d != "name" && (y[d] = d3.scale.linear()
-          .domain(d3.extent(investment, function(p) { return +p[d]; }))
-          .range([h, 0]));
-        }));
+    x.domain(
+      dimensions = d3.keys(investment[0]).filter(function(d) {
+        return d != "name" && (
+          y[d] = d3.scale.linear()
+            .domain(d3.extent(investment, function(p) { return +p[d]; }))
+            .range([h, 0])
+          );
+        }
+      )
+    );
 
     // Add grey background lines for context.
     background = svg.append("g")
-    .attr("class", "background")
-    .selectAll("path")
-    .data(investment)
-    .enter().append("path")
-    .attr("d", path);
+      .attr("class", "background")
+      .selectAll("path")
+      .data(investment)
+      .enter().append("path")
+      .attr("d", path);
 
     // Add blue foreground lines for focus.
     foreground = svg.append("g")
-    .attr("class", "foreground")
-    .selectAll("path")
-    .data(investment)
-    .enter().append("path")
-    .attr("d", path);
+      .attr("class", "foreground")
+      .selectAll("path")
+      .data(investment)
+      .enter().append("path")
+      .attr("d", path);
 
     // Add a group element for each dimension.
     var g = svg.selectAll(".dimension")
@@ -74,22 +81,22 @@ d3.csv("investment.csv", function(error, investment) {
             .attr("visibility", null);
             }));
 
-          // Add an axis and title.
-          g.append("g")
-            .attr("class", "axis")
-            .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
-            .append("text")
-            .attr("text-anchor", "middle")
-            .attr("y", -9)
-            .text(String);
+      // Add an axis and title.
+      g.append("g")
+        .attr("class", "axis")
+        .each(function(d) { d3.select(this).call(axis.scale(y[d])); })
+        .append("text")
+        .attr("text-anchor", "middle")
+        .attr("y", -9)
+        .text(String);
 
-          // Add and store a brush for each axis.
-          g.append("g")
-            .attr("class", "brush")
-            .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brushstart", brushstart).on("brush", brush)); })
-            .selectAll("rect")
-            .attr("x", -8)
-            .attr("width", 16);
+      // Add and store a brush for each axis.
+      g.append("g")
+        .attr("class", "brush")
+        .each(function(d) { d3.select(this).call(y[d].brush = d3.svg.brush().y(y[d]).on("brushstart", brushstart).on("brush", brush)); })
+        .selectAll("rect")
+        .attr("x", -8)
+        .attr("width", 16);
 });
 
 function position(d) {
