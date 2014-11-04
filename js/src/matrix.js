@@ -1,52 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<style>
-
-svg {
-  font: 12px sans-serif;
-}
-
-.background path {
-  fill: none;
-  stroke: #ccc;
-  stroke-opacity: .4;
-  shape-rendering: crispEdges;
-}
-
-.foreground path {
-  fill: none;
-  stroke: steelblue;
-  stroke-opacity: .7;
-}
-
-.brush .extent {
-  fill-opacity: .3;
-  stroke: #fff;
-  shape-rendering: crispEdges;
-}
-
-.axis line,
-.axis path {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-.axis text {
-  text-shadow: 0 1px 0 #fff;
-  cursor: move;
-}
-
-</style>
-  <script src="http://d3js.org/d3.v3.min.js"></script>
-</head>
-<body>
-<h1>Capital Investment Matrix</h1>
-<span id="diagram"></span>
-<script>
-
 var m = [30, 10, 10, 10],
     w = 960 - m[1] - m[3],
     h = 500 - m[0] - m[2];
@@ -61,17 +12,17 @@ var line = d3.svg.line(),
     foreground;
 
 var svg = d3.select("#diagram").append("svg")
-.attr("width", w + m[1] + m[3])
-.attr("height", h + m[0] + m[2])
-.append("g")
-.attr("transform", "translate(" + m[3] + "," + m[0] + ")");
+  .attr("width", w + m[1] + m[3])
+  .attr("height", h + m[0] + m[2])
+  .append("g")
+  .attr("transform", "translate(" + m[3] + "," + m[0] + ")");
 
-d3.csv("investment.csv", function(error, cars) {
+d3.csv("investment.csv", function(error, investment) {
 
     // Extract the list of dimensions and create a scale for each.
-    x.domain(dimensions = d3.keys(cars[0]).filter(function(d) {
+    x.domain(dimensions = d3.keys(investment[0]).filter(function(d) {
         return d != "name" && (y[d] = d3.scale.linear()
-          .domain(d3.extent(cars, function(p) { return +p[d]; }))
+          .domain(d3.extent(investment, function(p) { return +p[d]; }))
           .range([h, 0]));
         }));
 
@@ -79,7 +30,7 @@ d3.csv("investment.csv", function(error, cars) {
     background = svg.append("g")
     .attr("class", "background")
     .selectAll("path")
-    .data(cars)
+    .data(investment)
     .enter().append("path")
     .attr("d", path);
 
@@ -87,7 +38,7 @@ d3.csv("investment.csv", function(error, cars) {
     foreground = svg.append("g")
     .attr("class", "foreground")
     .selectAll("path")
-    .data(cars)
+    .data(investment)
     .enter().append("path")
     .attr("d", path);
 
@@ -170,8 +121,3 @@ function brush() {
         }) ? null : "none";
       });
 }
-
-</script>
-</body>
-
-</html>
