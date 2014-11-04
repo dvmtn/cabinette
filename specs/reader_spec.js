@@ -3,12 +3,12 @@ describe("Reader", function() {
     expect(window.cabinette.Reader).toBeDefined();
   });
 
-  it("calls $.getJSON", function(){
+  it("retrieves JSON", function(){
     var sample_json = { foo:'bar' };
     spyOn($,'getJSON').and.returnValue(sample_json);
-    var callback = function(returned_json){
+    var test_returned_json = function(returned_json){
       expect(returned_json).toEq(sample_json);
     };
-    $(cabinette).trigger('fetch_json', callback);
+    $(cabinette).trigger('fetch_json', test_returned_json);
   });
 });

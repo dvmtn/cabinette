@@ -12,4 +12,9 @@ describe("App", function() {
     var app = new cabinette.App();
     expect(app.reader).toBeDefined();
   });
+
+  it("has a ui", function(){
+    var app = new cabinette.App();
+    expect(app.ui).toBeDefined();
+  });
 });
