@@ -14,9 +14,15 @@
     };
 
     var find_names = function(json){
-      //mocked for now
-      debugger;
-      return ['jim', 'bob', 'stuart'];
+      var output = [];
+      _.each(json, function(group_members){
+        _.each(group_members, function(item){
+          if(item.name !== undefined){
+            output.push(item.name);
+          };
+        });
+      });
+      return output;
     };
 
     var fill_options = function(json){
