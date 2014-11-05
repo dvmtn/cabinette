@@ -2,7 +2,7 @@
 
   // Project configuration.
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),    
+    pkg: grunt.file.readJSON('package.json'),
     concat: {
       options: {
         separator: ';'
@@ -12,7 +12,7 @@
           'js/bookends/pre.js',
           'js/lib/jquery.js',
           'js/lib/*.js',
-          'js/src/*.js', 
+          'js/src/*.js',
           'js/bookends/post.js'
         ],
         dest: 'js/build/<%= pkg.name %>.min.js'
@@ -51,7 +51,10 @@
       },
       css: {
         files: 'css/src/*.scss',
-        tasks: ['sass']
+        tasks: ['sass'],
+        options: {
+          livereload: true,
+        }
       }
     }
   });
