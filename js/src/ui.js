@@ -19,6 +19,9 @@
       change: find
     }, '.finder');
 
+    //TODO: Make the finder a Chosen
+    //$(".finder").chosen();
+
     $(cabinette).on('populate_finder', populate_finder);
   };
 }());
