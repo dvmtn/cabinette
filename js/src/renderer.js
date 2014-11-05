@@ -15,22 +15,23 @@
     };
 
     var draw_columns = function(nodes){
-      var column_space = canvas_width / nodes.length;
+      var column_space = canvas_width / Object.keys(nodes).length;
       var x = 0;
       var y = spacing / 2;
       var column_width = column_space - spacing;
       var column_height = canvas_height - spacing;
+      var column_centre_offset = column_width / 2;
 
-      _.each(nodes, function(node){
+      _.each(nodes, function(column, header){
         paper.rect(x, y, column_width, column_height, 10);
+        paper.text(x+column_centre_offset, y + font_size, header);
         x += column_space;
       });
     };
 
     var render = function(event, options){
       calculate_canvas_dimensions();
-      data = Object.keys(options.data);
-      draw_columns(data);
+      draw_columns(options.data);
       options.complete(options.data);
     };
 
