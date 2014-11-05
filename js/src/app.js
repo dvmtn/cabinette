@@ -15,6 +15,7 @@
 
     var find_names = function(json){
       //mocked for now
+      debugger;
       return ['jim', 'bob', 'stuart'];
     };
 
