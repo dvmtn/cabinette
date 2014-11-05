@@ -29,7 +29,8 @@
       $(cabinette).trigger('populate_finder', {
         data: find_names(json),
         complete:function(options_markup){
-          console.log(options_markup);
+          //TODO: Make this callback optional
+          //console.log(options_markup);
         }
       });
     };
