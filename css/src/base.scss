@@ -41,8 +41,18 @@ select.finder{
 }
 .column{
   fill: #6593C5;
+  transition: fill 0.3s;
 }
-
+.column:hover{
+  fill: #71AFFF;
+  transition: fill 0.3s;
+}
 .node{
   fill: #D2E7FF;
+  transition: fill 0.3s;
+}
+
+.node:hover{
+  fill: #EFF7FF;
+  transition: fill 0.3s;
 }
