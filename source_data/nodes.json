@@ -1,5 +1,5 @@
 {
-  "capital providers":[
+  "Capital Providers":[
     {
       "name":"Big Society Capital",
       "examples":false
@@ -83,7 +83,7 @@
       "examples":false
     }
   ],
-  "investment funds":[
+  "Investment Funds":[
     {
       "name":"Nesta Impact Investments 1 LP",
       "manager":"Nesta Investment Management LLP"
@@ -113,7 +113,7 @@
       "manager":"Threadneedle Investments"
     }
   ],
-  "legal advisors":[
+  "Legal Advisors":[
     {
       "name":"Osborne Clarke"
     },
@@ -139,7 +139,7 @@
       "name":"Eversheds"
     }
   ],
-  "business advisors":[
+  "Business Advisors":[
     {
       "name":"MM Warburg"
     },
@@ -159,7 +159,7 @@
       "name":"Impact Value"
     }
   ],
-  "auditors":[
+  "Auditors":[
     {
       "name":"Baker Tilly UK Audit LLP"
     },
@@ -173,50 +173,50 @@
       "name":"BDO"
     }
   ],
-  "marketplace":[
+  "Marketplace":[
     {
       "name":"Social Enterprise UK"
     }
   ],
-  "depository institution":[
+  "Depository Institution":[
     {
       "name":"Charity Bank"
     }
   ],
-  "investment target":[
+  "Investment Target":[
     {
       "target":"Medium term equity, quasi-equity and debt investments of between £150k and £1.7m in early-stage ventures supplying their products and services in the UK",
-      "example":"Oomph Wellness",
+      "name":"Oomph Wellness",
       "website":"www.oomph-wellness.org"
     },
     {
       "target":"Young, growing social ventures seeking £300k - £5m in smart, patient growth funding",
-      "example":"K10",
+      "name":"K10",
       "website":"www.k-10.co.uk"
     },
     {
       "target":"Early stage energy or energy related ventures seeking a minimum of £50k debt or equity investment to £2m",
-      "example":"Midlands Together",
+      "name":"Midlands Together",
       "website":"www.midlandstogether.co.uk"
     },
     {
       "target":"Early stage social tech start ups seeking equity investment (often as a convertible note) and incubation to help launch minimum viable product and/or to scale-up",
-      "example":"Lingoing",
+      "name":"Lingoing",
       "website":"http://www.lingoing.com/"
     },
     {
       "target":"Community based, locally led organisations  providing  support and services to improve the well-being of local residents, developing the local economy and creating positive social change for all individuals in the community. Organisations seeking £250k to £1m investment.",
-      "example":"Charity working with adults with learning disabilities",
+      "name":"Charity working with adults with learning disabilities",
       "website":""
     },
     {
       "target":"Charities and social enterprises with ability to scale social impact, seeking investments of £300k to £1.5m",
-      "example":"HCT Group",
+      "name":"HCT Group",
       "website":"www.hctgroup.org"
     },
     {
       "target":"Charities and social enterprises seeking loans of £50k up to £2m",
-      "example":"Manchester Maccabi Community and Sports Club",
+      "name":"Manchester Maccabi Community and Sports Club",
       "website":"www.manchestermaccabi.org.uk"
     }
   ]
