@@ -10,6 +10,7 @@
       dist: {
         src: [
           'js/bookends/pre.js',
+          'js/lib/jquery.js',
           'js/lib/*.js',
           'js/src/*.js', 
           'js/bookends/post.js'
