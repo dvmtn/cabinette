@@ -4,11 +4,11 @@
     this.reader = new cabinette.Reader();
     this.ui = new cabinette.UI();
 
-    var draw_json = function(json){
+    var draw_json = function(json, callback){
       $(cabinette).trigger('render', {
         data: json,
         complete:function(rendered){
-          console.log(rendered);
+          if(callback) callback(rendered);
         }
       });
     };
@@ -25,12 +25,11 @@
       return output;
     };
 
-    var fill_options = function(json){
+    var fill_options = function(json, callback){
       $(cabinette).trigger('populate_finder', {
         data: find_names(json),
         complete:function(options_markup){
-          //TODO: Make this callback optional
-          //console.log(options_markup);
+          if(callback) callback(options_markup);
         }
       });
     };
