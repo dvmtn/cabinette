@@ -45,7 +45,7 @@
     var draw_column_contents = function(node_group, column){
       var y = 2 * font_size + spacing;
       _.each(node_group, function(node){
-        paper.rect(column.node.x, y, column.node.width, column.node.height, 5);
+        paper.rect(column.node.x, y, column.node.width, column.node.height, 5).node.setAttribute("class","node");
         paper.text(column.centre, y+ font_size, node.name);
         y += column.node.height + spacing;
       });
@@ -57,7 +57,7 @@
 
       _.each(node_groups, function(node_group, header){
         var col = columns.coords[c_index];
-        paper.rect(col.x, y, col.width, col.height, 5);
+        paper.rect(col.x, y, col.width, col.height, 5).node.setAttribute("class","column");
         paper.text(col.heading.x, col.heading.y, header);
         draw_column_contents(node_group, col);
         c_index++;
