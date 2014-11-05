@@ -5,6 +5,10 @@
       $(cabinette).trigger('sort', company_name);
     };
 
+    var string_to_id(string){
+      string.toLowerCase().trim().replace(/ /g,'_');
+    };
+
     var value_to_option = function(value){
       return '<option value="' + value + '">' + value + '</option>';
     };
