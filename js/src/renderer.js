@@ -43,11 +43,10 @@
             'M', start_x, start_y,
             'L', end_x, end_y
           ]).attr({
-            'stroke-width': 2,
             'stroke': '#6593C5',
             'arrow-end': 'block-midium-midium',
             'arrow-start': 'oval-narrow-short'
-          });
+          }).node.setAttribute('class','link');
         }
       });
     };

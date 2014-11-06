@@ -51,7 +51,7 @@
           name: file,
           complete: function(json){
             received_json[file] = json
-            draw_diagram(received_json); 
+            draw_diagram(received_json);
           }
         });
       });
