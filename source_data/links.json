@@ -15,15 +15,32 @@
     {"from": "MM Warburg",                    "to": "PWC"},
     {"from": "PWC",                           "to": "K10"},
 
-    {"from": "Non-Financial Corporations",  "to": "Ignite Social Enterprise LP"},
-    {"from": "Ignite Social Enterprise LP", "to": "Slaughter and May"},
-    {"from": "Slaughter and May",           "to": "UnLtd"},
-    {"from": "Eversheds",                   "to": "UnLtd"},
-    {"from": "Slaughter and May",           "to": "VitalSix"},
-    {"from": "Eversheds",                   "to": "VitalSix"},
-    {"from": "VitalSix",                    "to": "The Good Analyst"},
-    {"from": "The Good Analyst",            "to": "Social Enterprise UK"},
-    {"from": "Impact Value",                "to": "Social Enterprise UK"},
-    {"from": "Social Enterprise UK",        "to": "Midlands Together"}
+    {"from": "Non-Financial Corporations",    "to": "Ignite Social Enterprise LP"},
+    {"from": "Ignite Social Enterprise LP",   "to": "Slaughter and May"},
+    {"from": "Slaughter and May",             "to": "UnLtd"},
+    {"from": "Eversheds",                     "to": "UnLtd"},
+    {"from": "Slaughter and May",             "to": "VitalSix"},
+    {"from": "Eversheds",                     "to": "VitalSix"},
+    {"from": "VitalSix",                      "to": "The Good Analyst"},
+    {"from": "The Good Analyst",              "to": "Social Enterprise UK"},
+    {"from": "Impact Value",                  "to": "Social Enterprise UK"},
+    {"from": "Social Enterprise UK",          "to": "Midlands Together"},
+
+    {"from": "Institutional Fund",            "to": "Wayra UnLtd"},
+    {"from": "Non-Financial Corporations",    "to": "Wayra UnLtd"},
+    {"from": "Wayra UnLtd",                   "to": "Telefonica legal team"},
+    {"from": "Wayra UnLtd",                   "to": "Bates Wells Braithwaite"},
+    {"from": "Telefonica legal team",         "to": "Wayra UK"},
+    {"from": "Bates Wells Braithwaite",       "to": "Wayra UK"},
+    {"from": "Telefonica legal team",         "to": "Telefonica"},
+    {"from": "Bates Wells Braithwaite",       "to": "Telefonica"},
+    {"from": "Telefonica",                    "to": "UnLtd"},
+    {"from": "UnLtd",                         "to": "EY"},
+    {"from": "EY",                            "to": "Lingoing"},
+
+    {"from": "Big Society Capital",           "to": "Community Investment Fund"},
+    {"from": "Endowments and Foundations",    "to": "Community Investment Fund"},
+
+    {"from": "",                              "to": ""}
   ]
 }
