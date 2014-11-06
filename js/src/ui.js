@@ -5,8 +5,12 @@
       $(cabinette).trigger('sort', company_name);
     };
 
+    //TODO: Make this a util
     var string_to_id = function(string){
-      string.toLowerCase().trim().replace(/ /g,'_');
+      string.toLowerCase()
+        .trim()
+        .replace(/ /g,'_')
+        .replace(/&/g,'and');
     };
 
     var value_to_option = function(value){

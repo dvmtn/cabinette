@@ -23,7 +23,7 @@
           };
         });
       });
-      return output;
+      return output.sort();
     };
 
     var fill_options = function(json, callback){
