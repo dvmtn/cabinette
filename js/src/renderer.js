@@ -32,8 +32,8 @@
     var create_links = function(links){
       var paper = Raphael('links', display.width(), display.height());
       _.each(links.investment, function(link){
-        var from = $('#'+name_to_id(link.from));
-        var to = $('#'+name_to_id(link.to));
+        var from = $(link.from);
+        var to = $(link.to);
         if(from && to){
           var start_x = 12 + from.position().left + from.width();
           var start_y = from.position().top + (from.height()/2);
