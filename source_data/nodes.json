@@ -27,6 +27,9 @@
         },
         {
           "name":"The Apax Foundation"
+        },
+        {
+          "name":"Esmee Fairbairn Foundation"
         }
       ]
     },
@@ -63,14 +66,6 @@
         },
         {
           "name":"Telefonica"
-        }
-      ]
-    },
-    {
-      "name":"Endowments and Foundations",
-      "examples":[
-        {
-          "name":"Esmee Fairbairn Foundation"
         }
       ]
     },
@@ -157,6 +152,17 @@
     },
     {
       "name":"Impact Value"
+    }
+  ],
+  "Impact Advisors":[
+    {
+      "name":"The Good Analyst"
+    },
+    {
+      "name":"Impact Value"
+    },
+    {
+      "name":"UnLtd"
     }
   ],
   "Auditors":[
