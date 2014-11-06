@@ -1,13 +1,13 @@
-'links': {
-  'investment': [
-    {from: 'Big Society Capital',             to: 'Nesta Impact Investments 1 LP'},
-    {from: 'Omidyar Network',                 to: 'Nesta Impact Investments 1 LP'},
-    {from: 'Nesta',                           to: 'Nesta Impact Investments 1 LP'},
-    {from: 'Nesta Impact Investments 1 LP',   to: 'Nesta Investment Management LLP'},
-    {from: 'Nesta Investment Management LLP', to: 'Osborne Clarke'},
-    {from: 'Osborne Clarke',                  to: 'Baker Tilly UK Audit LLP'},
-    {from: 'Baker Tilly UK Audit LLP',        to: 'Oomph Wellness'},
+{
+  "investment": [
+    {"from": "Big Society Capital",             "to": "Nesta Impact Investments 1 LP"},
+    {"from": "Omidyar Network",                 "to": "Nesta Impact Investments 1 LP"},
+    {"from": "Nesta",                           "to": "Nesta Impact Investments 1 LP"},
+    {"from": "Nesta Impact Investments 1 LP",   "to": "Nesta Investment Management LLP"},
+    {"from": "Nesta Investment Management LLP", "to": "Osborne Clarke"},
+    {"from": "Osborne Clarke",                  "to": "Baker Tilly UK Audit LLP"},
+    {"from": "Baker Tilly UK Audit LLP",        "to": "Oomph Wellness"},
 
-    {from: 'Big Society Capital',             to: 'IV-UK'}
-  ],
+    {"from": "Big Society Capital",             "to": "IV-UK"}
+  ]
 }

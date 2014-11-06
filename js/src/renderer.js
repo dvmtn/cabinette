@@ -21,11 +21,18 @@
       });
     };
 
-    var render = function(event, options){
-      create_columns(options.data);
-      paper.path('M0,0 L250,250');
+    var create_links = function(links){
+      debugger;
+      _.each(links.investment, function(link){
+        paper.path('M0,0 L250,250');
+      });
+    };
 
-      options.complete(options.data);
+    var render = function(event, options){
+      create_columns(options.nodes);
+      create_links(options.links);
+
+      options.complete(options.nodes, options.links);
     };
 
     init();
