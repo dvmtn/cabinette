@@ -12,7 +12,7 @@
       _.each(columns, function(column, heading){
         var col_id = heading.toLowerCase().trim().replace(/ /g, '_');
         column.div = $('<div class="column '+col_id+'"></div>');
-        column.div.append('<h3>'+heading+'</h3>');
+        column.div.append('<h1>'+heading+'</h1>');
         _.each(column, function(cell){
           cell.div = $('<div class="cell">' + cell.name +'</div>');
           column.div.append(cell.div);
