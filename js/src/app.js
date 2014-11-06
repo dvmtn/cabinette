@@ -34,9 +34,12 @@
       });
     };
 
-    $(cabinette).trigger('fetch_json', function(json){
-      fill_options(json);
-      draw_json(json);
+    $(cabinette).trigger('fetch_json', {
+      name: 'nodes',
+      complete: function(json){
+        fill_options(json);
+        draw_json(json);
+      }
     });
   };
 }());
