@@ -64,10 +64,10 @@ select.finder {
   border: 1px solid #ccc;
   min-width: 75px;
   max-width: 100px;
-  background-color: #FFF;
+  background-color: #DCECFF;
   transition: background 0.25s; }
   #display .column .cell:hover {
-    background-color: #EFF7FF;
+    background-color: #ADD2FF;
     transition: background 0.25s; }
 
 #links {
