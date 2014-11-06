@@ -8,7 +8,7 @@ html {
   background: #ddd; }
 
 body {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 40px auto;
   background: white;
   padding: 24px;
@@ -32,27 +32,49 @@ select.finder {
   padding: 11px;
   -webkit-appearance: none; }
 
+#diagram {
+  position: relative; }
+
 #display {
   height: 640px;
-  padding: 23px;
   border: 1px solid #ccc;
   border-radius: 2px;
-  background: white; }
+  background: white;
+  display: table-row;
+  width: 100%;
+  z-index: 10; }
 
-.column {
-  fill: #6593C5;
-  transition: fill 0.3s; }
+#display .column {
+  display: inline-block;
+  margin: 5px;
+  padding: 15px;
+  display: table-cell; }
 
-.column:hover {
-  fill: #71AFFF;
-  transition: fill 0.3s; }
+#display h3 {
+  font-size: 16px;
+  text-align: center;
+  min-height: 36px; }
 
-.node {
-  fill: #D2E7FF;
-  transition: fill 0.3s; }
+#display .column .cell {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  min-width: 75px;
+  max-width: 100px;
+  background-color: #FFF;
+  transition: background 0.25s; }
+  #display .column .cell:hover {
+    background-color: #EFF7FF;
+    transition: background 0.25s; }
 
-.node:hover {
-  fill: #EFF7FF;
-  transition: fill 0.3s; }
+#links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 /*# sourceMappingURL=Cabinette.min.css.map */
