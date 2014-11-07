@@ -14,9 +14,9 @@
     };
 
     var selectors_for_journies = function(prefix, journies){
-      var selectors = []
+      var selectors = [];
       _.each(journies, function(journey){
-        selectors.push(prefix+'.'+journey);
+        selectors.push(prefix + '.' + journey);
       });
       return selectors.join(', ');
     };
@@ -34,13 +34,9 @@
     };
 
     var highlight = function(event, element_id){
-      var selected = $('#'+element_id);
-      if(selected.attr('class').match(/active/)){
-        unset_active();
-      }else{
-        unset_active();
-        set_active(selected);
-      }
+      var selected = $('#' + element_id);
+      unset_active();
+      set_active(selected);
     };
 
     init();
