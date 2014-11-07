@@ -1,16 +1,17 @@
 (function(){
   window.cabinette.UI = function(){
-    var find = function(event){
-      var company_name = $(event.currentTarget).val();
-      $(cabinette).trigger('sort', company_name);
-    };
-
     //TODO: Make this a util
     var string_to_id = function(string){
-      string.toLowerCase()
+      return string.toLowerCase()
         .trim()
         .replace(/ /g,'_')
         .replace(/&/g,'and');
+    };
+
+    var find = function(event){
+      var company_name = $(event.currentTarget).val();
+      console.log(company_name);
+      $(cabinette).trigger('highlight', company_name);
     };
 
     var value_to_option = function(value){
