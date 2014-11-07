@@ -10,6 +10,7 @@
       }, '.cell');
     };
 
+    //TODO: Extract this 
     var name_to_id = function(name){
         return name
           .toLowerCase()
@@ -59,13 +60,15 @@
       });
     };
 
-    var position_for_cell = function(element){
+    var element_coords = function(element){
       var el_position = element.position();
       var par_position = element.parent().position();
-      return {
-        left: el_position.left + par_position.left + parseInt(element.css('margin-left')) + parseInt(element.parent().css('margin-left')),
-        top: el_position.top + par_position.top + parseInt(element.css('margin-top')) + parseInt(element.parent().css('margin-top'))
-      };
+
+      var left = el_position.left + par_position.left + parseInt(element.css('margin-left')) + parseInt(element.parent().css('margin-left'));
+      var top = el_position.top + par_position.top + parseInt(element.css('margin-top')) + parseInt(element.parent().css('margin-top'));
+      var right = left + element.outerWidth();
+      var mid_y = top + (element.outerHeight()/2);
+      return {left: left, right: right, top: top, mid_y: mid_y};
     };
 
     var create_links = function(){
@@ -76,15 +79,11 @@
           var from = $(link.from);
           var to = $(link.to);
           if(from && to){
-            var start= position_for_cell(from);
-            var start_x = start.left + from.outerWidth();
-            var start_y = start.top + (from.outerHeight()/2);
-            var end = position_for_cell(to);
-            var end_x = end.left;
-            var end_y = end.top + (to.outerHeight()/2);
+            var start = element_coords(from);
+            var end = element_coords(to);
             paper.path([
-              'M', start_x, start_y,
-              'L', end_x, end_y
+              'M', start.right, start.mid_y,
+              'L', end.left, end.mid_y
             ]).node.setAttribute("class",'link journey_' + journey_id);
           }
         });
