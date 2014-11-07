@@ -68,6 +68,8 @@ select.finder {
   #display .column .cell:hover {
     background-color: #ADD2FF;
     transition: background 0.25s; }
+  #display .column .cell.active {
+    background-color: #ff0; }
 
 #links {
   position: absolute;
@@ -80,8 +82,7 @@ select.finder {
 .link {
   stroke-width: 2;
   stroke: #ccc; }
-
-.link .active {
-  stroke: #6593C5; }
+  .link.active {
+    stroke: #ffb000; }
 
 /*# sourceMappingURL=Cabinette.min.css.map */

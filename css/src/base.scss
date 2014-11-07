@@ -69,6 +69,9 @@ select.finder{
     background-color: #ADD2FF;
     transition: background 0.25s;
   }
+  &.active{
+    background-color: #ff0;
+  }
 }
 #links{
   position: absolute;
@@ -81,8 +84,7 @@ select.finder{
 .link{
   stroke-width: 2;
   stroke: #ccc;
+  &.active{
+    stroke: #ffb000;
+  }
 }
-.link .active{
-  stroke: #6593C5;
-}
-

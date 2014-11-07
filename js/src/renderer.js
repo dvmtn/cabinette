@@ -5,6 +5,9 @@
     var init = function(){
       display = $('#display');
       $(cabinette).on('render', render);
+      display.on({
+        click: cell_clicked
+      }, '.cell');
     };
 
     var name_to_id = function(name){
@@ -15,6 +18,12 @@
           .replace(/&/g, 'and');
     };
 
+    var cell_clicked = function(event){
+      var cell = $(event.currentTarget);
+      var id = cell.prop('id');
+      $(cabinette).trigger('highlight', id);
+    };
+
     var create_columns = function(columns){
       _.each(columns, function(column, heading){
         var col_id = name_to_id(heading);
@@ -22,7 +31,7 @@
         column.div.append('<h1>'+heading+'</h1>');
         _.each(column, function(cell){
           var cell_id = name_to_id(cell.name);
-          cell.div = $('<div class="cell" id="'+cell_id+'">' + cell.name +'</div>');
+          cell.div = $('<div class="cell '+cell_id+'" id="'+cell_id+'">' + cell.name +'</div>');
           column.div.append(cell.div);
         });
         $(display).append(column.div);
@@ -50,11 +59,10 @@
           var end = position_for_cell(to);
           var end_x = end.left;
           var end_y = end.top + (to.outerHeight()/2);
-          debugger;
           paper.path([
             'M', start_x, start_y,
             'L', end_x, end_y
-          ]).node.setAttribute('class','link');
+          ]).node.setAttribute("class",'link '+link.from.replace(/#/,'')+' '+link.to.replace(/#/,''));
         }
       });
     };
