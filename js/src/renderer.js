@@ -22,12 +22,21 @@
         column.div.append('<h1>'+heading+'</h1>');
         _.each(column, function(cell){
           var cell_id = name_to_id(cell.name);
-          cell.div = $('<div class="cell", id="'+cell_id+'">' + cell.name +'</div>');
+          cell.div = $('<div class="cell" id="'+cell_id+'">' + cell.name +'</div>');
           column.div.append(cell.div);
         });
         $(display).append(column.div);
       });
     };
+
+    var position_for_cell = function(element){
+      var el_position = element.position();
+      var par_position = element.parent().position();
+      return {
+        left: el_position.left + par_position.left,
+        top: el_position.top + par_position.top
+      };
+    }
 
     var create_links = function(links){
       var paper = Raphael('links', display.width(), display.height());
@@ -35,18 +44,16 @@
         var from = $(link.from);
         var to = $(link.to);
         if(from && to){
-          var start_x = 12 + from.position().left + from.width();
-          var start_y = from.position().top + (from.height()/2);
-          var end_x = 12 + to.position().left;
-          var end_y = to.position().top + (to.height()/2);
+          var start= position_for_cell(from);
+          var start_x = 15 + start.left + from.width();
+          var start_y = start.top + (from.height()/2);
+          var end = position_for_cell(to);
+          var end_x = 15 + end.left;
+          var end_y = end.top + (to.height()/2);
           paper.path([
             'M', start_x, start_y,
             'L', end_x, end_y
-          ]).attr({
-            'stroke': '#6593C5',
-            'arrow-end': 'block-midium-midium',
-            'arrow-start': 'oval-narrow-short'
-          }).node.setAttribute('class','link');
+          ]).node.setAttribute('class','link');
         }
       });
     };
