@@ -41,10 +41,15 @@
         }
       }
     },
+    jshint: {
+      all: ['Gruntfile.js', 'js/src/**/*.js', 'spec/**/*.js'],
+      beforeconcat: ['js/src/*.js', 'specs/*.js']
+    },
     watch: {
       js:{
         files: ['js/src/*.js'],
         tasks: [
+          'jshint',
           'concat'
           //,'uglify'
         ]
@@ -65,6 +70,7 @@
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-jasmine');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
 
   // Default task(s).
   grunt.registerTask('default', [
