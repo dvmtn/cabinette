@@ -4,7 +4,7 @@
 
     var init = function(){
       $(cabinette).on('highlight', highlight);
-    }
+    };
 
     var unset_active = function(){
       $('.cell.active').removeClass('active');

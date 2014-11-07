@@ -10,7 +10,7 @@
         nodes: nodes_jsons,
         links: links_json,
         complete:function(nodes, links){
-          if(callback){callback(nodes, links)};
+          if(callback){ callback(nodes, links); }
         }
       });
     };
@@ -21,7 +21,7 @@
         _.each(group_members, function(item){
           if(item.name !== undefined){
             output.push(item.name);
-          };
+          }
         });
       });
       return output.sort();
@@ -31,7 +31,7 @@
       $(cabinette).trigger('populate_finder', {
         data: find_names(json),
         complete:function(options_markup){
-          if(callback){callback(options_markup)};
+          if(callback){callback(options_markup);}
         }
       });
     };
@@ -40,7 +40,7 @@
       $(cabinette).trigger('populate_highlighter', {
         data: links_json,
         complete:function(options){
-          if(callback){callback(options)};
+          if(callback){callback(options);}
         }
       });
     };
@@ -61,7 +61,7 @@
         $(cabinette).trigger('fetch_json', {
           name: file,
           complete: function(json){
-            received_json[file] = json
+            received_json[file] = json;
             draw_diagram(received_json);
           }
         });

@@ -66,7 +66,7 @@
         left: el_position.left + par_position.left + parseInt(element.css('margin-left')) + parseInt(element.parent().css('margin-left')),
         top: el_position.top + par_position.top + parseInt(element.css('margin-top')) + parseInt(element.parent().css('margin-top'))
       };
-    }
+    };
 
     var create_links = function(){
       var paper = Raphael('links', display.width(), display.height());
