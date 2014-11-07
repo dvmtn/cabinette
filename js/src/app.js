@@ -2,6 +2,7 @@
   window.cabinette.App = function(){
     this.renderer = new cabinette.Renderer();
     this.reader = new cabinette.Reader();
+    this.highlighter = new cabinette.Highlighter();
     this.ui = new cabinette.UI();
 
     var draw_json = function(nodes_jsons, links_json, callback){

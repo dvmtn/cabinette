@@ -35,7 +35,7 @@
     {"from": "#telefonica_legal_team",             "to": "#telefonica"},
     {"from": "#bates_wells_braithwaite",           "to": "#telefonica"},
     {"from": "#telefonica",                        "to": "#impact_advisors #unltd"},
-    {"from": "#unltd",                             "to": "#ey"},
+    {"from": "#impact_advisors #unltd",            "to": "#ey"},
     {"from": "#ey",                                "to": "#lingoing"},
 
     {"from": "#big_society_capital",               "to": "#community_investment_fund"},

@@ -46,8 +46,8 @@ select.finder{
 }
 #display .column{
   position: relative;
-  margin: 5px;
-  padding: 15px;
+  margin:50px;
+  padding:20px;
   display:table-cell;
   z-index: 10;
 }
@@ -58,14 +58,12 @@ select.finder{
 }
 #display .column .cell{
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   text-align:center;
-  height:100px;
-  margin:10px;
+  margin:5px;
+  padding: 5px;
   border: 1px solid #ccc;
-  min-width:75px;
-  max-width:100px;
-  background-color: #DCECFF;
+  background-color: rgba(188,204,225, 0.7);
   transition: background 0.25s;
   &:hover{
     background-color: #ADD2FF;

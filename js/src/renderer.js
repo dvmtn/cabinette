@@ -33,8 +33,8 @@
       var el_position = element.position();
       var par_position = element.parent().position();
       return {
-        left: el_position.left + par_position.left,
-        top: el_position.top + par_position.top
+        left: el_position.left + par_position.left + parseInt(element.css('margin-left')) + parseInt(element.parent().css('margin-left')),
+        top: el_position.top + par_position.top + parseInt(element.css('margin-top')) + parseInt(element.parent().css('margin-top'))
       };
     }
 
@@ -45,11 +45,12 @@
         var to = $(link.to);
         if(from && to){
           var start= position_for_cell(from);
-          var start_x = 15 + start.left + from.width();
-          var start_y = start.top + (from.height()/2);
+          var start_x = start.left + from.outerWidth();
+          var start_y = start.top + (from.outerHeight()/2);
           var end = position_for_cell(to);
-          var end_x = 15 + end.left;
-          var end_y = end.top + (to.height()/2);
+          var end_x = end.left;
+          var end_y = end.top + (to.outerHeight()/2);
+          debugger;
           paper.path([
             'M', start_x, start_y,
             'L', end_x, end_y
