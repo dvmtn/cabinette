@@ -36,12 +36,22 @@
       });
     };
 
-    var draw_diagram = function(jsons){
-      if(jsons.nodes && jsons.links){
-        fill_options(jsons.nodes);
-        draw_json(jsons.nodes, jsons.links);
+    var setup_highlighter = function(links_json, callback){
+      $(cabinette).trigger('populate_highlighter', {
+        data: links_json,
+        complete:function(options){
+          if(callback){callback(options)};
+        }
+      });
+    };
+
+    var draw_diagram = function(json){
+      if(json.nodes && json.links){
+        fill_options(json.nodes);
+        setup_highlighter(json.links);
+        draw_json(json.nodes, json.links);
       }
-    }
+    };
 
     var get_source_data = function(){
       var received_json = {};
