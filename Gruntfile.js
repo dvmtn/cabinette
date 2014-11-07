@@ -49,7 +49,6 @@
       js:{
         files: ['js/src/*.js'],
         tasks: [
-          'jshint',
           'concat'
           //,'uglify'
         ]
@@ -82,6 +81,12 @@
 
   grunt.registerTask('test', [
     'jasmine'
+  ]);
+
+  grunt.registerTask('build', [
+    'jshint',
+    'jasmine',
+    'concat'
   ]);
 
 };
