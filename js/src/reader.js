@@ -2,8 +2,8 @@
   window.cabinette.Reader = function(){
 
     var sources = {
-      nodes: '/source_data/nodes.json',
-      links: '/source_data/links.json'
+      nodes: 'source_data/nodes.json',
+      links: 'source_data/links.json'
     };
 
     var lookup = function(key){
