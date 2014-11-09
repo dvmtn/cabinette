@@ -1,5 +1,15 @@
 (function(){
   window.cabinette.UI = function(){
+    $('#display').on({
+      click: cell_clicked
+    }, '.cell');
+
+    var cell_clicked = function(event){
+      var cell = $(event.currentTarget);
+      var id = cell.prop('id');
+      $(cabinette).trigger('highlight', id);
+    };
+
     //TODO: Make this a util
     var string_to_id = function(string){
       return string.toLowerCase()

@@ -5,24 +5,15 @@
     var init = function(){
       display = $('#display');
       $(cabinette).on('render', render);
-      display.on({
-        click: cell_clicked
-      }, '.cell');
     };
 
-    //TODO: Extract this 
+    //TODO: Extract this
     var name_to_id = function(name){
         return name
           .toLowerCase()
           .trim()
           .replace(/ /g, '_')
           .replace(/&/g, 'and');
-    };
-
-    var cell_clicked = function(event){
-      var cell = $(event.currentTarget);
-      var id = cell.prop('id');
-      $(cabinette).trigger('highlight', id);
     };
 
     var journies_for_element = function(element_id){
