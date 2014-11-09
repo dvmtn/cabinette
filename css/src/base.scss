@@ -63,18 +63,20 @@ select.finder{
   margin:5px;
   padding: 5px;
   border: 1px solid #aaa;
-  border-radius: 8px;
+  border-radius: 3px;
   background-color: rgba(2,130,255,0.2);
   transition: background 0.25s, box-shadow 0.25s;
   cursor: pointer;
   &:hover{
-    background-color:#62D0FF;
+    background-color:#5FB3FF;
   }
   &.active{
-    background-color:#0CCCF2;
+    background-color:#005EA5;
+    color: #ddd;
+    border-color: #ddd;
     box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
     &:hover{
-    background-color:#3CECFF;
+      background-color:#127EFF;
     }
   }
 }
@@ -92,7 +94,7 @@ select.finder{
   transition: stroke 0.25s, stoke-width 0.25s;
   &.active{
     transition: stroke 0.25s;
-    stroke: #0CCCF2;
+    stroke: #005EA5;
     stroke-width: 3;
   }
 }
