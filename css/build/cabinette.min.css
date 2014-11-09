@@ -46,7 +46,7 @@ select.finder {
 
 #display .column {
   position: relative;
-  margin: 50px;
+  margin: 20px;
   padding: 20px;
   display: table-cell;
   z-index: 10; }
