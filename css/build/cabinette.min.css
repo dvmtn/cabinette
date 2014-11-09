@@ -94,4 +94,7 @@ select.finder {
     stroke: #005EA5;
     stroke-width: 3; }
 
+.column#legal_advisors, .column#business_advisors, .column#impact_advisors {
+  background-color: rgba(127, 195, 255, 0.2); }
+
 /*# sourceMappingURL=cabinette.min.css.map */
