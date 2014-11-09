@@ -102,3 +102,6 @@ $active-colour: #005EA5;
 .column#legal_advisors, .column#business_advisors, .column#impact_advisors {
   background-color:rgba(127,195,255,0.2);
 }
+.column#marketplace, .column#depository_institution{
+  display:block;
+}
