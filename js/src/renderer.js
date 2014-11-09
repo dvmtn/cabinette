@@ -1,10 +1,11 @@
 (function(){
   window.cabinette.Renderer = function(){
-    var display, links;
+    var display, links, nodes;
 
     var init = function(){
       display = $('#display');
       $(cabinette).on('render', render);
+      $(cabinette).on('resize', resize);
     };
 
     //TODO: Extract this
@@ -37,8 +38,8 @@
       return output.trim();
     };
 
-    var create_columns = function(columns){
-      _.each(columns, function(column, heading){
+    var create_columns = function(){
+      _.each(nodes, function(column, heading){
         var col_id = name_to_id(heading);
         column.div = $('<div class="column" id="'+col_id+'"></div>');
         column.div.append('<h1>'+heading+'</h1>');
@@ -62,6 +63,13 @@
       return {left: left, right: right, top: top, mid_y: mid_y};
     };
 
+    var destroy_links = function(){
+      var paper = $('links')[0];
+      if(paper){
+        paper.remove();
+      }
+    };
+
     var create_links = function(){
       var paper = Raphael('links', display.width(), display.height());
       _.each(links.investment, function(journey){
@@ -83,10 +91,18 @@
 
     var render = function(event, options){
       links = options.links;
-      create_columns(options.nodes);
+      nodes = options.nodes;
+      create_columns();
       create_links();
 
       options.complete(options.nodes, options.links);
+    };
+
+    var resize = function(event, options){
+      if(links){
+        var old_paper = destroy_links();
+        create_links();
+      }
     };
 
     init();

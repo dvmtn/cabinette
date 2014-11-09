@@ -1,8 +1,23 @@
 (function(){
   window.cabinette.UI = function(){
-    $('#display').on({
-      click: cell_clicked
-    }, '.cell');
+
+    var init = function(){
+      $('body').on({
+        change: find
+      }, '.finder');
+
+      $('#display').on({
+        click: cell_clicked
+      }, '.cell');
+
+      $(cabinette).on('populate_finder', populate_finder);
+
+      $(window).bind('resize', _.debounce(
+        function() {
+          $(cabinette).trigger('resize');
+        }, 50)
+      );
+    };
 
     var cell_clicked = function(event){
       var cell = $(event.currentTarget);
@@ -34,10 +49,6 @@
       options.complete(options_string);
     };
 
-    $('body').on({
-      change: find
-    }, '.finder');
-
-    $(cabinette).on('populate_finder', populate_finder);
+    init();
   };
 }());
