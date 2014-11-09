@@ -56,6 +56,7 @@ select.finder{
   text-align: center;
   min-height: 36px;
 }
+$active-colour: #005EA5;
 #display .column .cell{
   display: block;
   font-size: 14px;
@@ -71,7 +72,7 @@ select.finder{
     background-color:#5FB3FF;
   }
   &.active{
-    background-color:#005EA5;
+    background-color:$active-colour;
     color: #ddd;
     border-color: #ddd;
     box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
@@ -94,7 +95,7 @@ select.finder{
   transition: stroke 0.25s, stoke-width 0.25s;
   &.active{
     transition: stroke 0.25s;
-    stroke: #005EA5;
+    stroke:$active-colour;
     stroke-width: 3;
   }
 }
