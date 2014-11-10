@@ -80,7 +80,8 @@ select.finder {
     #diagram .cell.active:hover {
       background-color: #127EFF; }
   #diagram .cell.selected {
-    border: 2px solid black; }
+    border: 2px solid black;
+    padding-left: 3px; }
 
 #links {
   position: absolute;
