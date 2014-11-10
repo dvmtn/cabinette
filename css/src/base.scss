@@ -74,7 +74,7 @@ $active-colour: #005EA5;
   &.active{
     background-color:$active-colour;
     color: #ddd;
-    border-color: #ddd;
+    border-color: rgba(200,200,200,0.5);
     box-shadow: 0px 3px 2px rgba(0,0,0,0.2);
     &:hover{
       background-color:#127EFF;
@@ -105,6 +105,10 @@ $active-colour: #005EA5;
 .column#legal_advisors, .column#business_advisors, .column#impact_advisors {
   background-color:rgba(127,195,255,0.2);
 }
-.column#marketplace, .column#depository_institution{
+.column#marketplace, .column#depository_institution, .column#auditors{
   display:block;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
