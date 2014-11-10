@@ -46,7 +46,7 @@
 
     var build_cell_html = function(cell, column){
       var cell_id = name_to_id(cell.name);
-      cell.div = $('<div class="cell '+cell_id+' '+journey_classes_for_element(cell_id)+'" id="'+cell_id+'">' + cell.name +'</div>');
+      cell.div = $('<div class="cell '+ journey_classes_for_element(cell_id)+'" id="'+ cell_id +'">' + cell.name +'</div>');
       column.div.append(cell.div);
     };
 
@@ -86,14 +86,12 @@
         _.each(journey.links, function(link){
           var from = $(link.from);
           var to = $(link.to);
-          if(from && to){
-            var start = element_coords(from);
-            var end = element_coords(to);
-            paper.path([
-              'M', start.right, start.mid_y,
-              'L', end.left, end.mid_y
-            ]).node.setAttribute("class",'link journey_' + journey_id);
-          }
+          var start = element_coords(from);
+          var end = element_coords(to);
+          paper.path([
+            'M', start.right, start.mid_y,
+            'L', end.left, end.mid_y
+          ]).node.setAttribute("class",'link journey_' + journey_id);
         });
       });
     };
