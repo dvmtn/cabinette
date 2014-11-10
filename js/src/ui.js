@@ -44,7 +44,7 @@
     };
 
     var populate_finder = function(event, options){
-      options_string = _.map(options.data, value_to_option).join("\n");
+      var options_string = _.map(options.data, value_to_option).join("\n");
       $('.finder').html(options_string);
       options.complete(options_string);
     };

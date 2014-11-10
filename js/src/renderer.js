@@ -10,11 +10,11 @@
 
     //TODO: Extract this
     var name_to_id = function(name){
-        return name
-          .toLowerCase()
-          .trim()
-          .replace(/ /g, '_')
-          .replace(/&/g, 'and');
+      return name
+      .toLowerCase()
+      .trim()
+      .replace(/ /g, '_')
+      .replace(/&/g, 'and');
     };
 
     var journies_for_element = function(element_id){
@@ -72,13 +72,14 @@
     };
 
     var destroy_links = function(){
-      var paper = $('.links')[0];
+      var paper = $('#links svg');
       if(paper){
         paper.remove();
       }
     };
 
     var create_links = function(){
+      destroy_links();
       var paper = Raphael('links', display.width(), display.height());
       _.each(links.investment, function(journey){
         var journey_id = journey.id;
@@ -109,7 +110,6 @@
     var resize = function(event){
       if(links){
         var selected = $('.selected')[0];
-        destroy_links();
         create_links();
         if(selected){
           $(cabinette).trigger('highlight', selected.id);
