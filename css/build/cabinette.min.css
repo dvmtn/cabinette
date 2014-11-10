@@ -93,7 +93,7 @@ select.finder {
 
 .link {
   stroke-width: 2;
-  stroke: #ccc;
+  stroke: #bdddff;
   transition: stroke 0.25s, stoke-width 0.25s; }
   .link.active {
     transition: stroke 0.25s;
