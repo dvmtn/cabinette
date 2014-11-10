@@ -12,6 +12,7 @@
       $('#display').on({
         click: cell_clicked
       }, '.cell');
+      
       $(cabinette).on('populate_finder', populate_finder);
 
       $(window).bind('resize', _.debounce(
