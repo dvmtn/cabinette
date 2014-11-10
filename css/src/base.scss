@@ -30,6 +30,7 @@ select.finder{
   border: 1px solid #ccc;
   font-size:16px;
   padding: 11px;
+  max-width: 500px;
   -webkit-appearance:none;
 }
 #diagram{
@@ -47,7 +48,9 @@ select.finder{
 #display .column{
   position: relative;
   margin:20px;
+  margin-bottom:5px;
   padding:20px;
+  padding-bottom: 5px;
   display:table-cell;
   z-index: 10;
 }
