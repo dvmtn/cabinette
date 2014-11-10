@@ -102,7 +102,7 @@
       nodes = options.nodes;
       create_columns();
       create_links();
-
+      $(cabinette).trigger('rendered');
       options.complete(options.nodes, options.links);
     };
 

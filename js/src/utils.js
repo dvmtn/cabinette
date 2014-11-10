@@ -6,8 +6,6 @@
         .trim()
         .replace(/ /g,'_')
         .replace(/&/g,'and');
-      }
-
+    }
   };
-
 }());

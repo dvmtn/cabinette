@@ -4,6 +4,7 @@
     this.reader = new cabinette.Reader();
     this.highlighter = new cabinette.Highlighter();
     this.ui = new cabinette.UI();
+    this.hash_reader = new cabinette.HashReader();
 
     var draw_json = function(nodes_jsons, links_json, callback){
       $(cabinette).trigger('render', {
