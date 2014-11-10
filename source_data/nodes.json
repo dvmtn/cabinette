@@ -183,38 +183,66 @@
   ],
   "Investment Target":[
     {
-      "target":"Medium term equity, quasi-equity and debt investments of between £150k and £1.7m in early-stage ventures supplying their products and services in the UK",
-      "name":"Oomph Wellness",
+      "id": "investment_target_1",
+      "name":"Medium term equity, quasi-equity and debt investments of between £150k and £1.7m in early-stage ventures supplying their products and services in the UK",
+      "examples":
+        [
+          "Oomph Wellness"
+        ],
       "website":"www.oomph-wellness.org"
     },
     {
-      "target":"Young, growing social ventures seeking £300k - £5m in smart, patient growth funding",
-      "name":"K10",
+      "id": "investment_target_2",
+      "name":"Young, growing social ventures seeking £300k - £5m in smart, patient growth funding",
+      "examples":
+        [
+          "K10"
+        ],
       "website":"www.k-10.co.uk"
     },
     {
-      "target":"Early stage energy or energy related ventures seeking a minimum of £50k debt or equity investment to £2m",
-      "name":"Midlands Together",
+      "id": "investment_target_3",
+      "name":"Early stage energy or energy related ventures seeking a minimum of £50k debt or equity investment to £2m",
+      "examples":
+        [
+          "Midlands Together"
+        ],
       "website":"www.midlandstogether.co.uk"
     },
     {
-      "target":"Early stage social tech start ups seeking equity investment (often as a convertible note) and incubation to help launch minimum viable product and/or to scale-up",
-      "name":"Lingoing",
+      "id": "investment_target_4",
+      "name":"Early stage social tech start ups seeking equity investment (often as a convertible note) and incubation to help launch minimum viable product and/or to scale-up",
+      "examples":
+        [
+          "Lingoing"
+        ],
       "website":"http://www.lingoing.com/"
     },
     {
-      "target":"Community based, locally led organisations  providing  support and services to improve the well-being of local residents, developing the local economy and creating positive social change for all individuals in the community. Organisations seeking £250k to £1m investment.",
-      "name":"Charity working with adults with learning disabilities",
+      "id": "investment_target_5",
+      "name":"Community based, locally led organisations  providing  support and services to improve the well-being of local residents, developing the local economy and creating positive social change for all individuals in the community. Organisations seeking £250k to £1m investment.",
+      "examples":
+        [
+          "Charity working with adults with learning disabilities"
+        ],
       "website":""
     },
     {
-      "target":"Charities and social enterprises with ability to scale social impact, seeking investments of £300k to £1.5m",
-      "name":"HCT Group",
+      "id": "investment_target_6",
+      "name":"Charities and social enterprises with ability to scale social impact, seeking investments of £300k to £1.5m",
+      "exmaples":
+        [
+          "HCT Group"
+        ],
       "website":"www.hctgroup.org"
     },
     {
-      "target":"Charities and social enterprises seeking loans of £50k up to £2m",
-      "name":"Manchester Maccabi Community and Sports Club",
+      "id": "investment_target_7",
+      "name":"Charities and social enterprises seeking loans of £50k up to £2m",
+      "examples":
+        [
+          "Manchester Maccabi Community and Sports Club"
+        ],
       "website":"www.manchestermaccabi.org.uk"
     }
   ]

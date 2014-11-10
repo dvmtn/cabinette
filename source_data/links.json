@@ -7,7 +7,7 @@
         {"from": "#endowments_and_foundations",        "to": "#nesta_impact_investments_1_lp"},
         {"from": "#nesta_impact_investments_1_lp",     "to": "#osborne_clarke"},
         {"from": "#osborne_clarke",                    "to": "#baker_tilly_uk_audit_llp"},
-        {"from": "#baker_tilly_uk_audit_llp",          "to": "#oomph_wellness"}
+        {"from": "#baker_tilly_uk_audit_llp",          "to": "#investment_target_1"}
       ]
     },
     {
@@ -20,7 +20,7 @@
         {"from": "#iv-uk",                             "to": "#arendt_and_medernach"},
         {"from": "#arendt_and_medernach",              "to": "#mm_warburg"},
         {"from": "#mm_warburg",                        "to": "#pwc"},
-        {"from": "#pwc",                               "to": "#k10"}
+        {"from": "#pwc",                               "to": "#investment_target_2"}
       ]
     },
     {
@@ -36,8 +36,8 @@
         {"from": "#business_advisors #unltd",          "to": "#the_good_analyst"},
         {"from": "#vitalsix",                          "to": "#impact_value"},
         {"from": "#business_advisors #unltd",          "to": "#impact_value"},
-        {"from": "#the_good_analyst",                  "to": "#midlands_together"},
-        {"from": "#impact_value",                      "to": "#midlands_together"}
+        {"from": "#the_good_analyst",                  "to": "#investment_target_3"},
+        {"from": "#impact_value",                      "to": "#investment_target_3"}
       ]
     },
     {
@@ -53,7 +53,7 @@
         {"from": "#bates_wells_braithwaite",           "to": "#telefonica"},
         {"from": "#telefonica",                        "to": "#impact_advisors #unltd"},
         {"from": "#impact_advisors #unltd",            "to": "#ey"},
-        {"from": "#ey",                                "to": "#lingoing"}
+        {"from": "#ey",                                "to": "#investment_target_4"}
       ]
     },
     {
@@ -63,7 +63,7 @@
         {"from": "#endowments_and_foundations",        "to": "#community_investment_fund"},
         {"from": "#community_investment_fund",         "to": "#travers_smith"},
         {"from": "#travers_smith",                     "to": "#bdo"},
-        {"from": "#bdo",                               "to": "#charity_working_with_adults_with_learning_disabilities"}
+        {"from": "#bdo",                               "to": "#investment_target_5"}
       ]
     },
     {
@@ -76,7 +76,7 @@
         {"from": "#private_investors_and_offices",     "to": "#bridges_social_entrepreneurs_fund"},
         {"from": "#bridges_social_entrepreneurs_fund", "to": "#bates_wells_braithwaite"},
         {"from": "#bates_wells_braithwaite",           "to": "#bdo"},
-        {"from": "#bdo",                               "to": "#hct_group"}
+        {"from": "#bdo",                               "to": "#investment_target_6"}
       ]
     },
     {
@@ -85,7 +85,7 @@
         {"from": "#big_society_capital",               "to": "#charity_bank"},
         {"from": "#retail_clients",                    "to": "#charity_bank"},
         {"from": "#charity_bank",                      "to": "#rollits"},
-        {"from": "#rollits",                           "to": "#manchester_maccabi_community_and_sports_club"}
+        {"from": "#rollits",                           "to": "#investment_target_7"}
       ]
     },
     {

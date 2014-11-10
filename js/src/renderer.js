@@ -44,8 +44,16 @@
       column.div.append('<h1>'+heading+'</h1>');
     };
 
+    var id_for_cell = function(cell){
+      if(cell.id){
+        return name_to_id(cell.id);
+      }else{
+        return name_to_id(cell.name);
+      }
+    };
+
     var build_cell_html = function(cell, column){
-      var cell_id = name_to_id(cell.name);
+      var cell_id = id_for_cell(cell);
       cell.div = $('<div class="cell '+ journey_classes_for_element(cell_id)+'" id="'+ cell_id +'">' + cell.name +'</div>');
       column.div.append(cell.div);
     };
