@@ -12,7 +12,6 @@
       $('#display').on({
         click: cell_clicked
       }, '.cell');
-
       $(cabinette).on('populate_finder', populate_finder);
 
       $(window).bind('resize', _.debounce(
@@ -40,7 +39,7 @@
 
     var populate_finder = function(event, options){
       var options_string = _.map(options.data, value_to_option).join("\n");
-      $('.finder').html(options_string);
+      $('.finder').html(options_string).chosen();
       options.complete(options_string);
     };
 
