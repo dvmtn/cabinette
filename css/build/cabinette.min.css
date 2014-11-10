@@ -100,10 +100,6 @@ select.finder {
   background-color: rgba(127, 195, 255, 0.2); }
 
 .column#marketplace, .column#depository_institution, .column#auditors {
-  display: block;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  padding-bottom: 5px;
-  padding-top: 5px; }
+  display: block; }
 
 /*# sourceMappingURL=cabinette.min.css.map */
