@@ -33,6 +33,12 @@ select.finder{
   max-width: 500px;
   -webkit-appearance:none;
 }
+.chosen-container{
+  position:absolute;
+  top:24px;
+  right:24px;
+}
+
 #diagram{
   position:relative;
   z-index:0;
