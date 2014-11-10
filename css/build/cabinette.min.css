@@ -56,7 +56,7 @@ select.finder {
   text-align: center;
   min-height: 36px; }
 
-#display .column .cell {
+#diagram .cell {
   display: block;
   font-size: 14px;
   text-align: center;
@@ -67,16 +67,16 @@ select.finder {
   background-color: rgba(2, 130, 255, 0.2);
   transition: background 0.25s, box-shadow 0.25s;
   cursor: pointer; }
-  #display .column .cell:hover {
+  #diagram .cell:hover {
     background-color: #5FB3FF; }
-  #display .column .cell.active {
+  #diagram .cell.active {
     background-color: #005EA5;
     color: #ddd;
     border-color: rgba(200, 200, 200, 0.5);
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2); }
-    #display .column .cell.active:hover {
+    #diagram .cell.active:hover {
       background-color: #127EFF; }
-  #display .column .cell.selected {
+  #diagram .cell.selected {
     border: 2px solid black; }
 
 #links {
@@ -99,7 +99,7 @@ select.finder {
 .column#legal_advisors, .column#business_advisors, .column#impact_advisors {
   background-color: rgba(127, 195, 255, 0.2); }
 
-.column#marketplace, .column#depository_institution, .column#auditors {
+.column#depository_institution, .column#investment_funds {
   display: block; }
 
 /*# sourceMappingURL=cabinette.min.css.map */

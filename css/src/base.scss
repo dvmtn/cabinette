@@ -57,7 +57,7 @@ select.finder{
   min-height: 36px;
 }
 $active-colour: #005EA5;
-#display .column .cell{
+#diagram .cell{
   display: block;
   font-size: 14px;
   text-align:center;
@@ -105,6 +105,6 @@ $active-colour: #005EA5;
 .column#legal_advisors, .column#business_advisors, .column#impact_advisors {
   background-color:rgba(127,195,255,0.2);
 }
-.column#marketplace, .column#depository_institution, .column#auditors{
+.column#depository_institution, .column#investment_funds{
   display:block;
 }

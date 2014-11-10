@@ -108,6 +108,11 @@
       "manager":"Threadneedle Investments"
     }
   ],
+  "Depository Institution":[
+    {
+      "name":"Charity Bank"
+    }
+  ],
   "Legal Advisors":[
     {
       "name":"Osborne Clarke"
@@ -174,16 +179,6 @@
     },
     {
       "name":"BDO"
-    }
-  ],
-  "Marketplace":[
-    {
-      "name":"Social Enterprise UK"
-    }
-  ],
-  "Depository Institution":[
-    {
-      "name":"Charity Bank"
     }
   ],
   "Investment Target":[

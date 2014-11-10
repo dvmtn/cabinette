@@ -36,9 +36,8 @@
         {"from": "#business_advisors #unltd",          "to": "#the_good_analyst"},
         {"from": "#vitalsix",                          "to": "#impact_value"},
         {"from": "#business_advisors #unltd",          "to": "#impact_value"},
-        {"from": "#the_good_analyst",                  "to": "#social_enterprise_uk"},
-        {"from": "#impact_value",                      "to": "#social_enterprise_uk"},
-        {"from": "#social_enterprise_uk",              "to": "#midlands_together"}
+        {"from": "#the_good_analyst",                  "to": "#midlands_together"},
+        {"from": "#impact_value",                      "to": "#midlands_together"}
       ]
     },
     {
@@ -83,10 +82,10 @@
     {
       "id":7,
       "links":[
-        {"from": "#big_society_capital",               "to": "#rollits"},
-        {"from": "#retail_clients",                    "to": "#rollits"},
-        {"from": "#rollits",                           "to": "#charity_bank"},
-        {"from": "#charity_bank",                      "to": "#manchester_maccabi_community_and_sports_club"}
+        {"from": "#big_society_capital",               "to": "#charity_bank"},
+        {"from": "#retail_clients",                    "to": "#charity_bank"},
+        {"from": "#charity_bank",                      "to": "#rollits"},
+        {"from": "#rollits",                           "to": "#manchester_maccabi_community_and_sports_club"}
       ]
     },
     {
