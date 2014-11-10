@@ -1,20 +1,13 @@
 (function(){
   window.cabinette.Renderer = function(){
+    var utils;
     var display, links, nodes;
 
     var init = function(){
+      utils = window.cabinette.utils;
       display = $('#display');
       $(cabinette).on('render', render);
       $(cabinette).on('resize', resize);
-    };
-
-    //TODO: Extract this
-    var name_to_id = function(name){
-      return name
-      .toLowerCase()
-      .trim()
-      .replace(/ /g, '_')
-      .replace(/&/g, 'and');
     };
 
     var journies_for_element = function(element_id){
@@ -39,16 +32,16 @@
     };
 
     var build_column_html = function(column, heading){
-      var col_id = name_to_id(heading);
+      var col_id = utils.string_to_id(heading);
       column.div = $('<div class="column" id="'+col_id+'"></div>');
       column.div.append('<h1>'+heading+'</h1>');
     };
 
     var id_for_cell = function(cell){
       if(cell.id){
-        return name_to_id(cell.id);
+        return utils.string_to_id(cell.id);
       }else{
-        return name_to_id(cell.name);
+        return utils.string_to_id(cell.name);
       }
     };
 

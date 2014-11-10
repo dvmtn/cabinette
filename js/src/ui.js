@@ -1,7 +1,10 @@
 (function(){
   window.cabinette.UI = function(){
+    var utils;
 
     var init = function(){
+      utils = window.cabinette.utils;
+
       $('body').on({
         change: find
       }, '.finder');
@@ -25,14 +28,6 @@
       $(cabinette).trigger('highlight', id);
     };
 
-    //TODO: Make this a util
-    var string_to_id = function(string){
-      return string.toLowerCase()
-        .trim()
-        .replace(/ /g,'_')
-        .replace(/&/g,'and');
-    };
-
     var find = function(event){
       var company_name = $(event.currentTarget).val();
       console.log(company_name);
@@ -40,7 +35,7 @@
     };
 
     var value_to_option = function(value){
-      return '<option value="' + string_to_id(value) + '">' + value + '</option>';
+      return '<option value="' + utils.string_to_id(value) + '">' + value + '</option>';
     };
 
     var populate_finder = function(event, options){
