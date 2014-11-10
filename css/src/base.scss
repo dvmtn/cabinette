@@ -80,6 +80,9 @@ $active-colour: #005EA5;
       background-color:#127EFF;
     }
   }
+  &.selected{
+    border: 2px solid black;
+  }
 }
 #links{
   position: absolute;

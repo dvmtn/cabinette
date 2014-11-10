@@ -76,6 +76,8 @@ select.finder {
     box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2); }
     #display .column .cell.active:hover {
       background-color: #127EFF; }
+  #display .column .cell.selected {
+    border: 2px solid black; }
 
 #links {
   position: absolute;

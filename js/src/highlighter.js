@@ -7,6 +7,7 @@
     };
 
     var unset_active = function(){
+      $('.cell.selected').removeClass('selected');
       $('.cell.active').removeClass('active');
       $('path').attr('class', function(index, classNames) {
         return classNames.replace('active', '');
@@ -22,6 +23,7 @@
     };
 
     var set_active = function(selected){
+      selected.addClass('selected');
       var classes = selected.attr('class').split(/\s+/);
       var journies = _.select(classes, function(klass){
         return (klass.match(/journey_/));
