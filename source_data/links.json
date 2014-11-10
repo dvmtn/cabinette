@@ -50,6 +50,7 @@
         {"from": "#wayra_unltd",                       "to": "#bates_wells_braithwaite"},
         {"from": "#telefonica_legal_team",             "to": "#wayra_uk"},
         {"from": "#bates_wells_braithwaite",           "to": "#wayra_uk"},
+        {"from": "#wayra_uk",                          "to": "#unltd_impact_advisor"},
         {"from": "#telefonica_legal_team",             "to": "#telefonica"},
         {"from": "#bates_wells_braithwaite",           "to": "#telefonica"},
         {"from": "#telefonica",                        "to": "#unltd_impact_advisor"},
