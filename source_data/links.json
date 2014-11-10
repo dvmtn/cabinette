@@ -28,11 +28,14 @@
       "links":[
         {"from": "#non-financial_corporations",        "to": "#ignite_social_enterprise_lp"},
         {"from": "#ignite_social_enterprise_lp",       "to": "#slaughter_and_may"},
-        {"from": "#slaughter_and_may",                 "to": "#unltd"},
-        {"from": "#eversheds",                         "to": "#unltd"},
+        {"from": "#slaughter_and_may",                 "to": "#business_advisors #unltd"},
+        {"from": "#eversheds",                         "to": "#business_advisors #unltd"},
         {"from": "#slaughter_and_may",                 "to": "#vitalsix"},
         {"from": "#eversheds",                         "to": "#vitalsix"},
         {"from": "#vitalsix",                          "to": "#the_good_analyst"},
+        {"from": "#business_advisors #unltd",          "to": "#the_good_analyst"},
+        {"from": "#vitalsix",                          "to": "#impact_value"},
+        {"from": "#business_advisors #unltd",          "to": "#impact_value"},
         {"from": "#the_good_analyst",                  "to": "#social_enterprise_uk"},
         {"from": "#impact_value",                      "to": "#social_enterprise_uk"},
         {"from": "#social_enterprise_uk",              "to": "#midlands_together"}
