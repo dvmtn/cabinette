@@ -1,7 +1,5 @@
 (function(){
   window.cabinette.Highlighter = function(){
-    var links = {};
-
     var init = function(){
       $(cabinette).on('highlight', highlight);
     };
@@ -33,6 +31,10 @@
       $(selectors_for_journies('path', journies)).attr('class', function(index, classNames) {
         return classNames + ' active';
       });
+
+      if(selected.parent().prop('id') === 'capital_providers'){
+        selected.siblings('.active').removeClass('active');
+      }
     };
 
     var highlight = function(event, element_id){
