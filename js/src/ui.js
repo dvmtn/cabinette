@@ -52,7 +52,7 @@
 
     var populate_finder = function(event, options){
       var options_string = _.map(options.data, value_to_option_group).join('\n');
-      $('.finder').html(options_string).chosen();
+      $('.finder').html(options_string).chosen({width: '400px'});
       options.complete(options_string);
     };
 
