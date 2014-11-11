@@ -25,22 +25,13 @@ p.intro{
   font-style: italic;
   margin-bottom: 18px;
 }
-select.finder{
+.chosen-container{
   position:absolute;
-  top: 24px;
-  right: 24px;
-  background: white;
-  border-radius:2px;
-  border: 1px solid #ccc;
+  top:14px;
+  right:24px;
   font-size:16px;
   padding: 11px;
   max-width: 500px;
-  -webkit-appearance:none;
-}
-.chosen-container{
-  position:absolute;
-  top:24px;
-  right:24px;
 }
 
 #diagram{
@@ -122,4 +113,24 @@ $hover-colour: #56AEFF;
 }
 .column#depository_institution, .column#investment_funds{
   display:block;
+}
+
+@media(max-width: 978px){
+  article{
+    margin: 0 auto;
+    padding: 16px;
+  }
+  .chosen-container{
+    position: static;
+    margin: 10px auto;
+  }
+  #diagram{
+    zoom: 0.8;
+  }
+}
+@media(max-width: 840px){
+  #diagram .column{
+    margin: 5px;
+    padding: 5px;
+  }
 }
