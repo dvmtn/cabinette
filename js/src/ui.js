@@ -45,7 +45,6 @@
 
     var value_to_option_group = function(values, group_name){
       var output_html = "<optgroup label='"+ group_name +"'>";
-      debugger;
       output_html += _.map(values, value_to_option).join("\n");
       output_html += "</optgroup>";
       return output_html;
