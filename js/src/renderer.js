@@ -87,12 +87,13 @@
         _.each(journey.links, function(link){
           var from = $(link.from);
           var to = $(link.to);
+          var from_class = utils.string_to_id(link.from).replace(/#/,'');
           var start = element_coords(from);
           var end = element_coords(to);
           paper.path([
             'M', start.right, start.mid_y,
             'L', end.left, end.mid_y
-          ]).node.setAttribute("class",'link journey_' + journey_id);
+          ]).node.setAttribute("class",'link journey_' + journey_id + ' from_' + from_class);
         });
       });
     };
