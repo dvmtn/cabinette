@@ -25,6 +25,7 @@ p.intro{
   font-style: italic;
   margin-bottom: 18px;
 }
+.finder,
 .chosen-container{
   position:absolute;
   top:14px;
@@ -120,6 +121,7 @@ $hover-colour: #56AEFF;
     margin: 0 auto;
     padding: 16px;
   }
+  .finder,
   .chosen-container{
     position: static;
     max-width:400px;
