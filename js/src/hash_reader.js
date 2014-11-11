@@ -1,7 +1,9 @@
 (function(){
   window.cabinette.HashReader = function(){
+    var prefix = 'showing-';
+
     var emit_hash = function(hash){
-      var trimmed_hash = hash.replace('#','');
+      var trimmed_hash = hash.replace('#' + prefix ,'');
       $(cabinette).trigger('highlight', trimmed_hash);
     };
 
@@ -12,7 +14,7 @@
     };
 
     var set_hash = function(event, name){
-      window.location.hash = '#' + name;
+      window.location.hash = '#' + prefix + name;
     };
 
     $(cabinette).on('rendered', test_hash);
