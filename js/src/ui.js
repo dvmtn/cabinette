@@ -30,16 +30,29 @@
 
     var find = function(event){
       var company_name = $(event.currentTarget).val();
-      console.log(company_name);
       $(cabinette).trigger('highlight', company_name);
     };
 
     var value_to_option = function(value){
-      return '<option value="' + utils.string_to_id(value) + '">' + value + '</option>';
+      var opt_value;
+      if(value.id){
+        opt_value = value.id;
+      }else{
+        opt_value = value.name;
+      }
+      return '<option value="' + utils.string_to_id(opt_value) + '">' + value.name + '</option>';
+    };
+
+    var value_to_option_group = function(values, group_name){
+      var output_html = "<optgroup label='"+ group_name +"'>";
+      debugger;
+      output_html += _.map(values, value_to_option).join("\n");
+      output_html += "</optgroup>";
+      return output_html;
     };
 
     var populate_finder = function(event, options){
-      var options_string = _.map(options.data, value_to_option).join("\n");
+      var options_string = _.map(options.data, value_to_option_group).join('\n');
       $('.finder').html(options_string).chosen();
       options.complete(options_string);
     };

@@ -16,21 +16,9 @@
       });
     };
 
-    var find_names = function(json){
-      var output = [];
-      _.each(json, function(group_members){
-        _.each(group_members, function(item){
-          if(item.name !== undefined){
-            output.push(item.name);
-          }
-        });
-      });
-      return output.sort();
-    };
-
     var fill_options = function(json, callback){
       $(cabinette).trigger('populate_finder', {
-        data: find_names(json),
+        data: json,
         complete:function(options_markup){
           if(callback){callback(options_markup);}
         }
