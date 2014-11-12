@@ -4,6 +4,10 @@
       $(cabinette).on('highlight', highlight);
     };
 
+    var move_active_paths_to_top = function(){
+      $('path.active').detach().appendTo('#links svg');
+    };
+
     var unset_path = function(path_selector){
       path_selector.attr('class', function(index, classNames) {
         return classNames.replace('active', '');
@@ -24,6 +28,14 @@
       return selectors.join(', ');
     };
 
+    var deactive_siblings = function(selected){
+      siblings = selected.siblings('.active');
+      siblings.removeClass('active');
+      _.each(siblings, function(sibling){
+        unset_path( $('path.active.from_' + sibling.id) );
+      });
+    };
+
     var set_active = function(selected){
       selected.addClass('selected');
       var classes = selected.attr('class').split(/\s+/);
@@ -36,12 +48,10 @@
       });
 
       if(selected.parent().prop('id') === 'capital_providers'){
-        siblings = selected.siblings('.active');
-        siblings.removeClass('active');
-        _.each(siblings, function(sibling){
-          unset_path( $('path.active.from_' + sibling.id) );
-        });
+        deactive_siblings(selected);
       }
+
+      move_active_paths_to_top();
     };
 
     var highlight = function(event, element_id){
