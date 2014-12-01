@@ -7,7 +7,7 @@
       utils = window.cabinette.utils;
       display = $('#display');
       $(cabinette).on('render', render);
-      $(cabinette).on('resize', resize);
+      $(cabinette).on('resize', redraw_lines);
     };
 
     var journies_for_element = function(element_id){
@@ -118,7 +118,7 @@
       options.complete(options.nodes, options.links);
     };
 
-    var resize = function(event){
+    var redraw_lines = function(event){
       if(links){
         var selected = $('.selected')[0];
         create_links();
