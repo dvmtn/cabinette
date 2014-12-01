@@ -124,6 +124,12 @@ p.intro {
 .column#depository_institution, .column#investment_funds {
   display: block; }
 
+/*
+.column#capital_providers .cell .example{
+  position: absolute;
+  display:none;
+}
+*/
 @media (max-width: 978px) {
   article {
     margin: 0 auto;

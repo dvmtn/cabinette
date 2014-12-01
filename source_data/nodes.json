@@ -65,6 +65,7 @@
           "name":"Centrica"
         },
         {
+          "id":"telefonica_non_financial_corporations",
           "name":"Telefonica"
         }
       ]
@@ -107,6 +108,7 @@
       "name":"Wayra UnLtd",
       "examples":[
         {
+          "id":"wayra_uk_investment_fund",
           "name":"Wayra UK"
         }
       ]
