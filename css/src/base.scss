@@ -64,9 +64,10 @@ p.intro{
   z-index:0;
   .cell{
     display: block;
+    max-width: 350px;
     font-size: 14px;
     text-align:center;
-    margin:5px;
+    margin:10px;
     padding: 5px;
     border: 1px solid #aaa;
     border-radius: 3px;
@@ -84,6 +85,9 @@ p.intro{
       &:hover{
         background-color:$hover-colour;
       }
+      /*.example{*/
+        /*display: block;*/
+      /*}*/
     }
     &.selected{
       border: 2px solid black;
@@ -98,6 +102,7 @@ p.intro{
       margin:inherit;
       padding:inherit;
       border-radius: inherit;
+      display:none;
     }
   }
 }
@@ -119,6 +124,9 @@ p.intro{
     stroke-width: 3;
   }
 }
+.cell#marketplace{
+  max-width: 100%;
+}
 .column#business_advisors{
   &::before{
     position:absolute;
@@ -138,12 +146,6 @@ p.intro{
 .column#depository_institution, .column#investment_funds{
   display:block;
 }
-/*
-.column#capital_providers .cell .example{
-  position: absolute;
-  display:none;
-}
-*/
 
 @media(max-width: 978px){
   article{

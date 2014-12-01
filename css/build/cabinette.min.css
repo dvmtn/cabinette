@@ -59,9 +59,10 @@ p.intro {
   z-index: 0; }
   #diagram .cell {
     display: block;
+    max-width: 350px;
     font-size: 14px;
     text-align: center;
-    margin: 5px;
+    margin: 10px;
     padding: 5px;
     border: 1px solid #aaa;
     border-radius: 3px;
@@ -74,7 +75,10 @@ p.intro {
       background-color: #005ea5;
       color: #ddd;
       border-color: rgba(200, 200, 200, 0.5);
-      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2); }
+      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+      /*.example{*/
+      /*display: block;*/
+      /*}*/ }
       #diagram .cell.active:hover {
         background-color: #267ace; }
     #diagram .cell.selected {
@@ -88,7 +92,8 @@ p.intro {
       border: 1px solid #aaa;
       margin: inherit;
       padding: inherit;
-      border-radius: inherit; }
+      border-radius: inherit;
+      display: none; }
 
 #links {
   position: absolute;
@@ -107,6 +112,9 @@ p.intro {
     stroke: #005ea5;
     stroke-width: 3; }
 
+.cell#marketplace {
+  max-width: 100%; }
+
 .column#business_advisors::before {
   position: absolute;
   content: "Intermediaries";
@@ -124,12 +132,6 @@ p.intro {
 .column#depository_institution, .column#investment_funds {
   display: block; }
 
-/*
-.column#capital_providers .cell .example{
-  position: absolute;
-  display:none;
-}
-*/
 @media (max-width: 978px) {
   article {
     margin: 0 auto;
