@@ -90,6 +90,16 @@ $hover-colour: #267ACE;
     border: 2px solid black;
     padding-left: 3px;
   }
+  .example{
+    background-color: rgba(2,130,255,0.4);
+    display: block;
+    font-size: 12px;
+    text-align:center;
+    border: 1px solid #aaa;
+    margin:inherit;
+    padding:inherit;
+    border-radius: inherit;
+  }
 }
 #links{
   position: absolute;
