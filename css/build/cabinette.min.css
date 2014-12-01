@@ -34,10 +34,6 @@ p.intro {
   padding: 11px;
   max-width: 400px; }
 
-#diagram {
-  position: relative;
-  z-index: 0; }
-
 #display {
   height: 640px;
   border: 1px solid #ccc;
@@ -45,53 +41,54 @@ p.intro {
   display: table-row;
   width: 100%;
   z-index: 0; }
-
-#display .column {
-  position: relative;
-  margin: 20px;
-  margin-bottom: 5px;
-  padding: 20px;
-  padding-bottom: 5px;
-  display: table-cell;
-  z-index: 10; }
-
-#display h1 {
-  font-size: 16px;
-  text-align: center;
-  min-height: 36px; }
-
-#diagram .cell {
-  display: block;
-  font-size: 14px;
-  text-align: center;
-  margin: 5px;
-  padding: 5px;
-  border: 1px solid #aaa;
-  border-radius: 3px;
-  background-color: rgba(2, 130, 255, 0.2);
-  transition: background 0.25s, box-shadow 0.25s;
-  cursor: pointer; }
-  #diagram .cell:hover {
-    background-color: #267ace; }
-  #diagram .cell.active {
-    background-color: #005ea5;
-    color: #ddd;
-    border-color: rgba(200, 200, 200, 0.5);
-    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2); }
-    #diagram .cell.active:hover {
-      background-color: #267ace; }
-  #diagram .cell.selected {
-    border: 2px solid black;
-    padding-left: 3px; }
-  #diagram .cell .example {
-    background-color: rgba(2, 130, 255, 0.4);
-    display: block;
-    font-size: 12px;
+  #display .column {
+    position: relative;
+    margin: 20px;
+    margin-bottom: 5px;
+    padding: 20px;
+    padding-bottom: 5px;
+    display: table-cell;
+    z-index: 10; }
+  #display h1 {
+    font-size: 16px;
     text-align: center;
+    min-height: 36px; }
+
+#diagram {
+  position: relative;
+  z-index: 0; }
+  #diagram .cell {
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
     border: 1px solid #aaa;
-    margin: inherit;
-    padding: inherit;
-    border-radius: inherit; }
+    border-radius: 3px;
+    background-color: rgba(2, 130, 255, 0.2);
+    transition: background 0.25s, box-shadow 0.25s;
+    cursor: pointer; }
+    #diagram .cell:hover {
+      background-color: #267ace; }
+    #diagram .cell.active {
+      background-color: #005ea5;
+      color: #ddd;
+      border-color: rgba(200, 200, 200, 0.5);
+      box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2); }
+      #diagram .cell.active:hover {
+        background-color: #267ace; }
+    #diagram .cell.selected {
+      border: 2px solid black;
+      padding-left: 3px; }
+    #diagram .cell .example {
+      background-color: rgba(2, 130, 255, 0.4);
+      display: block;
+      font-size: 12px;
+      text-align: center;
+      border: 1px solid #aaa;
+      margin: inherit;
+      padding: inherit;
+      border-radius: inherit; }
 
 #links {
   position: absolute;
@@ -109,6 +106,17 @@ p.intro {
     transition: stroke 0.25s;
     stroke: #005ea5;
     stroke-width: 3; }
+
+.column#business_advisors::before {
+  position: absolute;
+  content: "Intermediaries";
+  display: block;
+  top: 12px;
+  width: 150px;
+  left: 50%;
+  margin-left: -75px;
+  text-align: center;
+  font-weight: 700; }
 
 .column#legal_advisors, .column#business_advisors, .column#impact_advisors {
   background-color: rgba(127, 195, 255, 0.2); }
