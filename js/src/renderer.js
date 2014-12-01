@@ -45,7 +45,7 @@
       }
     };
 
-    var build_cell_examples_html = function(cell){
+    var cell_examples_html = function(cell){
       var html_out = '';
       _.each(cell.examples, function(example){
         html_out += '<div class="example" id="'+ id_for_cell(example) +'">'+ example.name +'</div>';
@@ -57,8 +57,8 @@
       var cell_id = id_for_cell(cell);
       cell.div = $('<div class="cell '+ journey_classes_for_element(cell_id)+'" id="'+ cell_id +'">' + cell.name +'</div>');
       if(cell.examples){
-        var example_divs = build_cell_examples_html(cell);
-        cell.div.append(example_divs);
+        //TODO: Enable after reviewing how the customer would like long columns to be dealt with
+        //cell.div.append(cell_examples_html(cell));
       }
       column.div.append(cell.div);
     };
