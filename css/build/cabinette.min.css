@@ -154,4 +154,5 @@ p.intro {
     padding-top: 20px; }
 
   .column#business_advisors:before {
-    top: 5px; } }
+    top: 5px;
+    margin-left: -20px; } }
