@@ -36,7 +36,6 @@ p.intro{
   padding: 11px;
   max-width:400px;
 }
-
 #display{
   height: 640px;
   border: 1px solid #ccc;
@@ -64,8 +63,7 @@ p.intro{
   z-index:0;
   .cell{
     display: block;
-    /*max-width: 360px;*/
-    min-width: 80px;
+    min-width: 70px;
     font-size: 14px;
     text-align:center;
     margin:10px;
@@ -90,9 +88,6 @@ p.intro{
         background-color: rgba(2,130,255,0.6);
         color:#333;
       }
-      /*.example{*/
-        /*display: block;*/
-      /*}*/
     }
     &.selected{
       border: 2px solid black;
@@ -107,7 +102,6 @@ p.intro{
       margin:2px;
       padding:inherit;
       border-radius: inherit;
-      display:none;
     }
   }
 }
@@ -132,24 +126,36 @@ p.intro{
 .cell#marketplace{
   max-width: 100%;
 }
-.column#business_advisors{
-  &::before{
+.column{
+  &#legal_advisors,
+  &#business_advisors,
+  &#impact_advisors,
+  &#auditors{
+    background-color:rgba(127,195,255,0.2);
+  }
+  &#depository_institution,
+  &#investment_funds{
+    display:block
+  }
+  &#business_advisors:before{
     position:absolute;
     content: "Intermediaries";
     display: block;
     top: 12px;
     width: 150px;
     left: 50%;
-    margin-left: -75px;
     text-align:center;
     font-weight:700;
   }
-}
-.column#legal_advisors, .column#business_advisors, .column#impact_advisors {
-  background-color:rgba(127,195,255,0.2);
-}
-.column#depository_institution, .column#investment_funds{
-  display:block;
+  &#capital_providers .example{
+    display:none;
+  }
+  &#investment_funds .example:before{
+    content: "Managed by "
+  }
+  &#investment_target .example:before{
+    content: "e.g. "
+  }
 }
 
 @media(max-width: 978px){
