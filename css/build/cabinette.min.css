@@ -59,7 +59,8 @@ p.intro {
   z-index: 0; }
   #diagram .cell {
     display: block;
-    max-width: 350px;
+    /*max-width: 360px;*/
+    min-width: 80px;
     font-size: 14px;
     text-align: center;
     margin: 10px;
@@ -81,6 +82,9 @@ p.intro {
       /*}*/ }
       #diagram .cell.active:hover {
         background-color: #267ace; }
+      #diagram .cell.active.selected {
+        background-color: rgba(2, 130, 255, 0.6);
+        color: #333; }
     #diagram .cell.selected {
       border: 2px solid black;
       padding-left: 3px; }
@@ -90,7 +94,7 @@ p.intro {
       font-size: 12px;
       text-align: center;
       border: 1px solid #aaa;
-      margin: inherit;
+      margin: 2px;
       padding: inherit;
       border-radius: inherit;
       display: none; }

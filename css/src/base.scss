@@ -64,7 +64,8 @@ p.intro{
   z-index:0;
   .cell{
     display: block;
-    max-width: 350px;
+    /*max-width: 360px;*/
+    min-width: 80px;
     font-size: 14px;
     text-align:center;
     margin:10px;
@@ -85,6 +86,10 @@ p.intro{
       &:hover{
         background-color:$hover-colour;
       }
+      &.selected{
+        background-color: rgba(2,130,255,0.6);
+        color:#333;
+      }
       /*.example{*/
         /*display: block;*/
       /*}*/
@@ -99,7 +104,7 @@ p.intro{
       font-size: 12px;
       text-align:center;
       border: 1px solid #aaa;
-      margin:inherit;
+      margin:2px;
       padding:inherit;
       border-radius: inherit;
       display:none;
