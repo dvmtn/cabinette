@@ -152,4 +152,8 @@ p.intro {
 @media (max-width: 840px) {
   #diagram .column {
     margin: 5px;
-    padding: 5px; } }
+    padding: 5px;
+    padding-top: 20px; }
+
+  .column#business_advisors:before {
+    top: 5px; } }
