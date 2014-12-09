@@ -1,0 +1,288 @@
+{
+  "Capital Providers":[
+    {
+      "name":"Big Society Capital",
+      "examples":false
+    },
+    {
+      "name":"Endowments and Foundations",
+      "examples":[
+        {
+          "name":"Omidyar Network"
+        },
+        {
+          "name":"Nesta"
+        },
+        {
+          "name":"LGT Foundation"
+        },
+        {
+          "name":"Golden Bottle Trust"
+        },
+        {
+          "name":"Stichtung Anton Jurgens Fonds"
+        },
+        {
+          "name":"The Social Investment Business Foundation"
+        },
+        {
+          "name":"The Apax Foundation"
+        },
+        {
+          "name":"Esmee Fairbairn Foundation"
+        }
+      ]
+    },
+    {
+      "name":"Institutional Fund",
+      "examples":[
+        {
+          "name":"London Borough of Waltham Forest Pension Fund"
+        },
+        {
+          "name":"Office for Civil Society"
+        }
+      ]
+    },
+    {
+      "name":"Financial Corporations",
+      "examples":[
+        {
+          "name":"Deutsche Bank"
+        },
+        {
+          "name":"3i"
+        },
+        {
+          "name":"JP Morgan"
+        }
+      ]
+    },
+    {
+      "name":"Non-Financial Corporations",
+      "examples":[
+        {
+          "name":"Centrica"
+        },
+        {
+          "id":"telefonica_non_financial_corporations",
+          "name":"Telefonica"
+        }
+      ]
+    },
+    {
+      "name":"Private investors and offices",
+      "examples":false
+    },
+    {
+      "name":"Retail clients",
+      "examples":false
+    }
+  ],
+  "Investment Funds":[
+    {
+      "name":"Nesta Impact Investments 1 LP",
+      "examples":[
+        {
+          "name":"Nesta Investment Management LLP"
+        }
+      ]
+    },
+    {
+      "name":"IV-UK",
+      "examples":[
+        {
+          "name":"LGT Venture Philanthropy"
+        }
+      ]
+    },
+    {
+      "name":"Ignite Social Enterprise LP",
+      "examples":[
+        {
+          "name":"Centrica"
+        }
+      ]
+    },
+    {
+      "name":"Wayra UnLtd",
+      "examples":[
+        {
+          "id":"wayra_uk_investment_fund",
+          "name":"Wayra UK"
+        }
+      ]
+    },
+    {
+      "name":"Community Investment Fund",
+      "examples":[
+        {
+          "name":"Social and Sustainable Capital"
+        }
+      ]
+    },
+    {
+      "name":"Bridges Social Entrepreneurs Fund",
+      "examples":[
+        {
+          "name":"Bridges Ventures"
+        }
+      ]
+    },
+    {
+      "name":"Threadneedle Social Bond Fund",
+      "examples":[
+        {
+          "name":"Threadneedle Investments"
+        }
+      ]
+    }
+  ],
+  "Depository Institution":[
+    {
+      "name":"Charity Bank"
+    }
+  ],
+  "Legal Advisors":[
+    {
+      "name":"Osborne Clarke"
+    },
+    {
+      "name":"Arendt & Medernach"
+    },
+    {
+      "name":"Slaughter and May"
+    },
+    {
+      "name":"Eversheds"
+    },
+    {
+      "name":"Telefonica legal team"
+    },
+    {
+      "name":"Bates Wells Braithwaite"
+    },
+    {
+      "name":"Travers Smith"
+    },
+    {
+      "name":"Rollits"
+    }
+  ],
+  "Business Advisors":[
+    {
+      "name":"MM Warburg"
+    },
+    {
+      "id":"unltd_business_advisor",
+      "name":"UnLtd"
+    },
+    {
+      "name":"Wayra UK"
+    },
+    {
+      "name":"VitalSix"
+    },
+    {
+      "name":"Telefonica"
+    }
+  ],
+  "Impact Advisors":[
+    {
+      "name":"The Good Analyst"
+    },
+    {
+      "name":"Impact Value"
+    },
+    {
+      "id":"unltd_impact_advisor",
+      "name":"UnLtd"
+    }
+  ],
+  "Auditors":[
+    {
+      "name":"Baker Tilly UK Audit LLP"
+    },
+    {
+      "name":"PwC"
+    },
+    {
+      "name":"EY"
+    },
+    {
+      "name":"BDO"
+    }
+  ],
+  "Investment Target":[
+    {
+      "id":"investment_target_1",
+      "name":"Medium term equity, quasi-equity and debt investments of between £150k and £1.7m in early-stage ventures supplying their products and services in the UK",
+      "examples":[
+        {
+          "name":"Oomph Wellness"
+        }
+      ],
+      "website":"www.oomph-wellness.org"
+    },
+    {
+      "id":"investment_target_2",
+      "name":"Young, growing social ventures seeking £300k - £5m in smart, patient growth funding",
+      "examples":[
+        {
+          "name":"K10"
+        }
+      ],
+      "website":"www.k-10.co.uk"
+    },
+    {
+      "id":"investment_target_3",
+      "name":"Early stage energy or energy related ventures seeking a minimum of £50k debt or equity investment to £2m",
+      "examples":[
+        {
+          "name":"Midlands Together"
+        }
+      ],
+      "website":"www.midlandstogether.co.uk"
+    },
+    {
+      "id":"investment_target_4",
+      "name":"Social tech start ups seeking equity investment (often as a convertible note) and incubation to launch minimum viable product and/or to scale-up.",
+      "examples":[
+        {
+          "name":"Lingoing"
+        }
+      ],
+      "website":"http://www.lingoing.com/"
+    },
+    {
+      "id":"investment_target_5",
+      "name":"Community based organisations seeking £250k to £1m investment to provide services to improve the well-being of local residents, develop the local economy and create positive social change for the community.",
+      "examples":[
+        {
+          "name":"Charity working with adults with learning disabilities"
+        }
+      ],
+      "website":""
+    },
+    {
+      "id":"investment_target_6",
+      "name":"Charities and social enterprises with ability to scale social impact, seeking investments of £300k to £1.5m",
+      "exmaples":[
+        {
+          "name":"HCT Group"
+        }
+      ],
+      "website":"www.hctgroup.org"
+    },
+    {
+      "id":"investment_target_7",
+      "name":"Charities and social enterprises seeking loans of £50k up to £2m",
+      "examples":[
+        {
+          "name":"Manchester Maccabi Community and Sports Club"
+        }
+      ],
+      "website":"www.manchestermaccabi.org.uk"
+    }
+  ]
+}
